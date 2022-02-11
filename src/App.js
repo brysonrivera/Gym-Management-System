@@ -1,23 +1,23 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
-import Attendance from './pages/Attendence';
-import Classes from './pages/Classes';
-import Employees from './pages/Employees';
+import AttendancePage from './pages/AttendencePage';
+import ClassesPage from './pages/ClassesPage';
+import EmployeesPage from './pages/EmployeesPage';
 import HomePage from './pages/HomePage';
-import GymMachines from './pages/GymMachines';
-import Members from './pages/Members';
+import GymMachinesPage from './pages/GymMachinesPage';
+import MembersPage from './pages/MembersPage';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="/attendance" element={<Attendance />} />
-        <Route path="/classes" element={<Classes />} />
-        <Route path="/employees" element={<Employees />} />
-        <Route path="/gym-machines" element={<GymMachines />} />
-        <Route path="/members" element={<Members />} />
+        <Route path="/attendance" element={<AttendancePage />} />
+        <Route path="/classes" element={<ClassesPage />} />
+        <Route path="/employees" element={<EmployeesPage />} />
+        <Route path="/gym-machines" element={<GymMachinesPage />} />
+        <Route path="/members" element={<MembersPage />} />
       </Routes>
     </div>
   );
